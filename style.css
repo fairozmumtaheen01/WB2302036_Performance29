@@ -1,0 +1,54 @@
+.tooltip{
+    position:relative;
+    display: inline-block;
+    background-color: blueviolet;
+    color: #fff;
+    margin-top: 200px;
+}
+.tooltip .toolText{
+    visibility: hidden;
+    width: 150px;
+    background-color: red;
+    position: absolute;
+    z-index: 2;
+    padding: 1.5px;
+    top: -40px;
+    left: 0;
+    
+}
+.tooltip:hover .toolText{
+    visibility: visible;
+}
+.tooltip .toolText::after{
+    content:"";
+    position: absolute;
+    border-width: 7px;
+    border-style: solid;
+    border-color: #000 transparent transparent transparent;
+    top: 20px;
+    left: 60px;
+}
+.mask{
+    -webkit-mask-image: url(w3logo.png);
+    mask-image: url(w3logo.png);
+    -webkit-mask-repeat:no-repeat;
+    mask-repeat: no-repeat;
+}
+.btn{
+    padding: 10px;
+    border-radius: 5px;
+    background-color: green;
+    color:#fff;
+    border:none;
+}
+.btn:hover{
+    cursor:pointers;
+
+}
+.danger{
+    background-color: red;
+    color:#000;
+}
+.primary{
+    background-color: blue;
+}
